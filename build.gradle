@@ -1,0 +1,58 @@
+//apply({
+//println "test nibba nibii"
+//}) //this is a method that is available
+   //
+
+/*
+  script interface is implemented by all gradle scripts (eg apply method)
+  project interface is implemented by the gradle scripts
+  gradle interface
+  settings interface
+  task interface
+  action interface
+
+ */
+
+//logger.info "nish is here testing`123"
+// logger is a property available with script interface
+
+//initialization - init.gradle, settings.gradle
+//configuration - build.gradle
+//execution  - build.gradle (task)
+defaultTasks "hi","help","bye"
+println "build.gradle in config phase"
+
+println "${project.gradle.timestampNish()}"
+
+println "${gradle.gradleUserHomeDir}"
+
+println "${project.buildFile}"
+
+println "${a}"
+
+project.ext.nishinish = "test-->"
+
+println nishinish
+
+task hi
+task bye
+
+project.hi.doFirst ({
+    println "aazzaa"
+})
+
+project.hi.doFirst ({
+    println "aazzaazanj"
+})
+
+project.hi.doLast ({
+    println "aloha"
+}).doLast ( {
+    println "very ;ast"
+})
+
+project.bye.doFirst ({
+    println "zarazara"
+})
+
+println "az"

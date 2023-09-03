@@ -1,0 +1,6 @@
+println "thsi is init"
+
+gradle.ext.timestampNish = {
+    println "test"
+    84
+}
